@@ -59,7 +59,7 @@ roc_obj1 <- roc(response = test_data$class, predictor = as.numeric(dt_prediction
 auc(roc_obj1)
 plot(roc_obj1, main = "ROC Curve for Decision Tree")
 ```
-#rondom forest 
+#random forest 
 ```{r}
 rf_model <- randomForest(class ~ ., data = train_data, ntree=100)
 print(rf_model)
